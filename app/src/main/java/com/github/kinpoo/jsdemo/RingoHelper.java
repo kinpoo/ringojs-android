@@ -16,6 +16,7 @@ import java.io.IOException;
 
 public class RingoHelper {
     private static final String RINGO_DIR_NAME = "ringo";
+    private static final String CLASS_DIR_NAME = "classes";
     private static final String MODULES_JAR_NAME = "ringo-modules.jar";
 
     private static RingoHelper instance;
@@ -68,6 +69,7 @@ public class RingoHelper {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        ringoConfig.setContextClassLoader(new ContextClassLoader(getCacheDir(CLASS_DIR_NAME)));
 
         try {
             rhinoEngine = new RhinoEngine(ringoConfig, null);
@@ -80,8 +82,12 @@ public class RingoHelper {
         return appContext.getCacheDir();
     }
 
+    private File getCacheDir(String name) {
+        return new File(getCacheDir(), name);
+    }
+
     private File getRingoDir() {
-        return new File(getCacheDir(), RINGO_DIR_NAME);
+        return getCacheDir(RINGO_DIR_NAME);
     }
 
     private File getRingoDir(String name) {
