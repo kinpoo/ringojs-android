@@ -7,6 +7,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.github.kinpoo.ringojs_android.RingoHelper;
+
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 

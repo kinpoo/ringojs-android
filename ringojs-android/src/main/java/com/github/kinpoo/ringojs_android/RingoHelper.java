@@ -1,4 +1,4 @@
-package com.github.kinpoo.jsdemo;
+package com.github.kinpoo.ringojs_android;
 
 import android.content.Context;
 

@@ -1,4 +1,4 @@
-# ringojs-android-example
+# ringojs-android
 An example RingoJS on Android, RingoJS is a JavaScript platform base on
 [Rhino](https://www.mozilla.org/rhino/).
 

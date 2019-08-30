@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ringojs-android-example.iml" filepath="$PROJECT_DIR$/ringojs-android-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/master-ringojs-android.iml" filepath="$PROJECT_DIR$/master-ringojs-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ringojs-android/ringojs-android-ringojs-android.iml" filepath="$PROJECT_DIR$/ringojs-android/ringojs-android-ringojs-android.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group="com.github.kinpoo"
 
 android {
     compileSdkVersion 29
@@ -22,8 +25,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.faendir.rhino:rhino-android:1.5.2'
-    implementation 'com.wshunli.android:android-copy-assets:2.2.0'
+    implementation project(':ringojs-android')
+    implementation 'org.mozilla:rhino:1.7.11'
 
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
